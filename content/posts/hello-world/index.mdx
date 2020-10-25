@@ -1,13 +1,17 @@
 ---
-title: Hello World (example)
-date: 2019-04-15
+title: テスト投稿を兼ねていろいろイジる①
+date: 2020-10-26
 image: ./sunset-beach.jpg
 imageAlt: A beach at sunset with crashing waves.
 ---
 
-Hello, world! This is a demo post for `gatsby-theme-blog`.
+## 基本的な記載ルールをいろいろ試す
 
-Delete me, and get writing!
+\`\`\` (バックティック3つ)<br/>
+ここに書かれた内容がコードブロックになります<br/>
+\`\`\` (バックティック3つ)<br/>
+
+下記のコードブロックはデフォルトの例文
 
 ```js:title=gatsby-config.js
 module.exports = {
@@ -18,16 +22,17 @@ module.exports = {
 }
 ```
 
-This is another paragraph after the code block.
+本文は、htmlの記法も使えるっぽい<br/>
+改行ルールはなんだかよくわかりません<br/>
+基本的にはbrタグつけて改行してねって感じみたい
 
-## This is a secondary heading
 
-```jsx
-import React from "react"
-import { ThemeProvider } from "theme-ui"
-import theme from "./theme"
+## \#をつけると強調されて見出しになる
 
-export default props => (
-  <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
-)
-```
+\#をいくつ付けるかでh1〜h6までを表現できる<br/>
+(開発者ツールで確認済)
+
+ただし、デフォルトではなぜかh1のフォントサイズが小さい<br/>
+本日は眠いのでこの辺で切り上げ<br/>
+記事書いてたらhtml上手になりそう()
+
